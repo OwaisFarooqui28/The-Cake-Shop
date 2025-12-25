@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap"
+            rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: cornsilk;
+            color: #3e2723;
+        }
+        h1{
+           font-family: 'Pacifico', cursive;
+            color: #8b4513; 
+        }
+        h2{
+            font-family: 'Pacifico', cursive;
+            color: #fbfafa;
+        }
+        h3{
+            font-family: 'Pacifico', cursive;
+            color: #8b4513;
+        }
+        h4{
+            font-family: 'Pacifico', cursive;
+            color: #8b4513;
+        }
+        h5 {
+            font-family: 'Pacifico', cursive;
+            color: #8b4513;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background-color: #8b4a14; 
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+        } 
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 30px; 
+        }
+        .nav-right a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .login-btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: none;
+            background: white;
+            color: #8b4a14;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .slide-bg {
+            height: 700px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+       .moving-banner {
+            background: cornsilk;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 10px 0;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+        }
+
+        .moving-banner .text {
+            display: inline-block;
+            color:#8b4513;
+            font-weight: bold;
+            font-size: 30px;
+            animation: scroll-left 12s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+            transform: translateX(100%);
+            }
+            100% {
+            transform: translateX(-100%);
+            }
+        }
+        .carousel-item {
+            height: 550px;
+        }
+        .carousel-item img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .carousel-caption h5 {
+            font-size: 50px;
+            color: white;
+        }
+        .btn {
+        width: 30%;
+        margin-left: 8px;
+        border-radius: 10px;
+        color: white;
+        }
+        .hover{
+        transition: transform 0.3s ease;
+        }
+        .hover:hover{
+        transform: translateY(-20px);
+        }
+        .special-items {
+            text-align: center;
+            background-color: cornsilk;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .special-items img {
+            height: 150px;
+            width: 150px;
+            margin-bottom: 15px;
+            border: 5px solid #fff8dc;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+
+        .review {
+            background-color: #8b4513;
+            color: white;
+            padding: 50px 0;
+        }
+
+        .reviews {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #3e2723;
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .icons a:hover {
+            color: #d2691e;
+        }
+        .white{
+        color: white;
+        background-color: rgb(255, 255, 255, 0.5);
+        border-radius: 50px;
+        font-family: 'Quicksand', sans-serif;
+        margin-left: 400px;
+
+
+        }
+        .white:hover{
+            background: #ffffff;
+            color: black;
+            
+        }
+        .fa-star{
+            color: gold;
+        }
+        .white{
+     color: white;
+     width: 100%;
+     background-color: rgb(255, 255, 255, 0.5);
+     border-radius: 50px;
+     font-family: 'Quicksand', sans-serif;
+     margin-left: 400px;
+
+
+        }
+        .white:hover{
+            background: #ffffff;
+            color: black;
+            
+        }
+        .btn {
+        width: 100%;
+        margin-left: 8px;
+        border-radius: 10px;
+        color: white;
+    }
+    .kuchbhi{
+        color: white;
+     width: 100%;
+     background-color:  #8b4a14;
+     border-radius: 50px;
+     font-family: 'Quicksand', sans-serif;
+
+    }
+    .kuchbhi:hover{
+     color: rgb(0, 0, 0);
+     width: 100%;
+     background-color:  #8b4a14;
+     border-radius: 50px;
+     font-family: 'Quicksand', sans-serif;
+    }
+    .thecake{
+        font-size: 45px;
+        font-family: 'Pacifico', cursive;
+        color: beige;
+    }
+    </style>
+
+</head>
+
+<body>
+  <nav class="navbar">
+  <div class="nav-left">
+    <img src="logo.png" class="logo">
+    <strong class="thecake">The Cake</strong>
+  </div>
+  <div class="nav-right">
+    <a href="home.html"><b>Home</b></a>
+    <a href="about.html"><b>About</b></a>
+    <a href="SPECIALS.html"><b>Specials</b></a>
+    <a href="contact.html"><b>Contact</b></a>
+    <a href="login.html" class="btn white"><strong>LOGIN</strong></a>
+  </div>
+</nav>
+      <div class="moving-banner">
+    <div class="text">
+        ...🔥 Special Offer! 30% OFF — Limited Time Only! | Free Delivery on Orders Above 1500 PKR 🎉...
+    </div>
+</div>
+    <div id="mycarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner" height="2000px">
+            <div class="carousel-item active">
+                <img src="Card Img/wedding 2/ck2.jpg"
+                    class="d-block w-100" height="500px">
+                <div class="carousel-caption">
+                    <h5>CHOCO LAVA CAKE</h5>
+                    <p>a 3-inch pie cake with crunchie troppings</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/1200x/b7/7b/56/b77b56cf49b3b3837b71c46ffa5a1088.jpg"
+                    class="d-block w-100" height="500px">
+                <div class="carousel-caption">
+                    <h5>ALMOND CAKE</h5>
+                    <p>A three layer creamy cake with almond troppings</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Card Img/wedding 2/ck3.jpg"
+                    class="d-block w-100" height="500px">
+                <div class="carousel-caption">
+                    <h5>CHOCO HUDDLE CAKE</h5>
+                    <p>A chocolate petal cake with strawberry stuffing</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">next</span>
+        </button>
+
+    </div>
+
+    <div class="container special" style="padding: 60px 0;">
+        <h1 class="text-center mb-5">Our Daily Specials</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center hover">
+                <div class="special-items">
+                    <img src="https://i.pinimg.com/1200x/f5/0c/cb/f50ccb5829c98acd6ccc817fe7dbc729.jpg" alt="Cake">
+                    <h3>Velvet Dream</h3>
+                    <p>Smooth red velvet sponge with cream cheese frosting.</p>
+                    <div>
+                        <span class="price-text">25.00 $</span>
+                    </div>                 
+                    <div>
+                        <a href="SPECIALS.html" class=" btn kuchbhi viewmore">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center hover">
+                <div class="special-items">
+                    <img src="https://i.pinimg.com/1200x/2d/6b/73/2d6b730bd1ed40fdd802572515eafd2d.jpg" alt="Cake">
+                    <h3>Choco Truffle</h3>
+                    <p>Decadent chocolate ganache with dark chocolate chips.</p>
+                    <div>
+                        <span class="price-text">28.00 $</span>
+                    </div>
+                    <div>
+                        <a href="SPECIALS.html" class=" btn kuchbhi viewmore">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center hover">
+                <div class="special-items">
+                    <img src="https://i.pinimg.com/1200x/7f/a2/49/7fa2491b944e1ffdc34c9967c37e7158.jpg" alt="Cake">
+                    <h3>Vanilla Bean</h3>
+                    <p>Classic vanilla with a modern twist of caramel drizzle.</p>
+                    <div>
+                        <span class="price-text">22.00  $</span>
+                    </div>
+                    <div>
+                         <a href="SPECIALS.html" class=" btn kuchbhi viewmore">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="review">
+        <div class="container">
+            <h2 class="text-center" style="color: white;">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="reviews text-center">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p class="mt-3">"The best chocolate cake I've ever tasted! Highly recommended for
+                            birthdays."
+                        </p>
+                        <strong>- hussain</strong>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="reviews text-center">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <p class="mt-3">"Ordered a wedding cake and it was stunning. Tasted as good as it
+                            looked!"</p>
+                        <strong>- Owais Farooqui</strong>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="reviews text-center">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <p class="mt-3">"Love the cozy vibe of the shop and the pastries are always fresh."</p>
+                        <strong>- wasey</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-4">Frequently Asked Questions</h1>
+
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1Heading">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+            What products do you offer?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We offer a wide range of cakes, cupcakes, pastries, and customized desserts.
+        </div>
+    </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2Heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            Do you take custom cake orders?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes! You can share your design, theme, or idea, and we’ll make it for you.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3Heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            How can I place an order?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can place your order directly from our website or WhatsApp.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h3 style="color: #d2691e;">The Cake</h3>
+                    <p>Baking happiness since 2010.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4 style="color: #d2691e; font-family: 'Quicksand', sans-serif;">Contact Us</h4>
+                    <p>aptech shahrah-e-faisal,karachi</p>
+                    <p>Phone: +92 (333) 115945</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4 style="color: #d2691e; font-family: 'Quicksand', sans-serif;">Follow Us</h4>
+                    <div class="icons mt-3">
+                        <a href="https://www.facebook.com/thecakebypallet"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/thecakeplates_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.3);">
+            <p>&copy; 2025 The Cake. All rights reserved.</p>
+        </div>
+    </footer>
+ 
+</body>
+<script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
+
+
+
+
+  
+
+
+
+
+
+
