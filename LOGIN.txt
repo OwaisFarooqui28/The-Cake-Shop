@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+    .body,html {
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+    .videobackground {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+.videobackground video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+
+}
+.text-center{
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+.back{
+    background-color: #8b4513;
+    width: 40%;
+    position: relative;
+    top: 120px;
+    height: 70vh;
+    padding-top: 25px;
+    border-radius: 20px;
+}
+input::placeholder{
+    width: 100%;
+    background: none;
+    border: 2px solid cornsilk;
+    width: 500px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+label{
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    color: rgb(255, 249, 249);
+}
+
+</style>
+</head>
+<body background color="cornsilk">
+    <div class="videobackground">
+    <video autoplay muted loop playsinline>
+        <source src="loginvid.mp4" type="video/mp4">
+    </video>
+    <div class="container ">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-5 back">
+                <h1 class="text-center"> Login</h1>
+                <hr>
+                <form action="home.html" width="100px">
+                    <label for="" style="border-color: white;">NAME:</label>
+                    <br>
+                    <input type="text" required placeholder="enter your name:" >
+                    <br>
+                    <br><br>
+                    <label for="">USERNAME:</label>
+                    <br>
+                    <input type="email" name=""  required placeholder="enter your email:" id="u_name">
+                    <br>
+                    <br><br>
+                    <label for="">PASSWORD:</label>
+                    <br>
+                    <input type="password" required placeholder="enter your password:" id="u_pass">
+                     <input type="button" class="btn btn-primary w-100 mt-5" style="background-color: rgb(6, 26, 71); border-color: cornsilk;" value="Login" onclick="abc()"></button>
+                     <h3 id="res"></h3>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function abc() {
+            var name="owais farooqui";
+            var pass="12345";
+
+            var uname= document.getElementById("u_name").value;
+            var upass= document.getElementById("u_pass").value;
+
+            if(uname === name && upass === pass) {
+                 Swal.fire({
+                title: "Welcome!",
+                text: "Login Successful",
+                icon: "success"
+            }).then(() => {
+                window.location.href = "home.html";
+            });
+            }
+            else{
+              Swal.fire({
+                title: "Error!",
+                text: "Incorrect Username or Password",
+                icon: "error"
+            });
+            } 
+        }
+    </script>
+</body>
+</html>

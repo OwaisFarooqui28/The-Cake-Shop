@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap"
+            rel="stylesheet">
+    <style>
+        .row{
+            margin-top: 50px;
+        }
+        .collapse{
+            transition: height 0.5 ease;
+        }
+        .blue{
+            width: 30%;
+            margin-top: 10px;
+        }
+        .card-img img{
+             width: 100%;
+             height: 220px;      
+             object-fit: cover; 
+             border-radius: 5px;
+        }   
+         body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: cornsilk;
+            color: #3e2723;
+        }
+        h1{
+           font-family: 'Pacifico', cursive;
+            color: #8b4513; 
+        }
+        h2{
+            font-family: 'Pacifico', cursive;
+            color: #8b4513;
+        }
+        h3{
+            font-family: 'Pacifico', cursive;
+            color: #8b4513;
+        }
+        h4{
+            font-family: 'Pacifico', cursive;
+            color: #8b4513;
+        }
+        h5 {
+            font-family: 'Pacifico', cursive;
+            color: #8b4513;
+        }
+        h6{
+            font-family: 'Pacifico', cursive;
+            color: #8b4513;
+            font-weight: bolder;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background-color: #8b4a14; 
+        }
+        .thecake{
+        font-size: 45px;
+        font-family: 'Pacifico', cursive;
+        color: beige;
+    }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+        } 
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 30px; 
+        }
+        .nav-right a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .login-btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: none;
+            background: white;
+            color: #8b4a14;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .card-title{
+            font-size: bold;
+            font-weight: bolder;
+            color: #8b4513;
+            font-family: 'Pacifico', cursive;
+        }
+        .birthday{
+            height: 200px;
+            width: 100px;
+        }
+        footer {
+            background-color: #3e2723;
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .icons a:hover {
+            color: #d2691e;
+        }
+        .white{
+     color: white;
+     width: 100%;
+     background-color: rgb(255, 255, 255, 0.5);
+     border-radius: 50px;
+     font-family: 'Quicksand', sans-serif;
+     margin-left: 400px;
+
+
+        }
+        .white:hover{
+            background: #ffffff;
+            color: black;
+            
+        }
+        .btn {
+        width: 100%;
+        margin-left: 8px;
+        border-radius: 10px;
+        color: white;
+    }
+    .hover{
+        transition: transform 0.3s ease;
+    }
+    .hover:hover{
+      transform: translateY(-20px);
+    }
+    </style>
+</head>
+<body>
+
+
+ <nav class="navbar">
+  <div class="nav-left">
+    <img src="logo.png" class="logo">
+    <strong class="thecake">The Cake</strong>
+  </div>
+  <div class="nav-right">
+    <a href="home.html"><b>Home</b></a>
+    <a href="about.html"><b>About</b></a>
+    <a href="SPECIALS.html"><b>Specials</b></a>
+    <a href="contact.html"><b>Contact</b></a>
+    <a href="login.html" class="btn white"><strong>LOGIN</strong></a>
+  </div>
+</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top text-center" style="background-color: #d18651;">
+        <div class="container justify-content-center">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link  navhover" href="#birthday"><strong>BIRTHDAY</strong></a></li>
+                    <li class="nav-item"><a class="nav-link  navhover" href="#anniversary"><strong>ANNIVERSARY</strong></a></li>
+                    <li class="nav-item"><a class="nav-link  navhover" href="#wedding"><strong>WEDDING</strong></a></li>
+                    <li class="nav-item"><a class="nav-link  navhover" href="#engagement"><strong>ENGAGEMENT</strong></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+
+
+
+    <hr>
+    <div class="container-fluid text-center" id="birthday">
+        <div class="row">
+            <div class="col-12">
+                <h1>BIRTHDAY CAKES</h1>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container text-center">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center hover">
+                <div class="card-img">
+                    <img src="C:\Users\user\Desktop\eproject\Card Img\birthday\0cf8dd896497f5ab51e115f8c51a8af6.jpg" alt="" width="100%" height="200px" class="img-fluid">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    PINK NUTELLA CAKE
+                </div>
+                <div class="card-text">
+                    A rectangular pink-themed birthday cake decorated with pink frosting, gold accents,chocolate bars, donuts, and metallic butterflie. I hope you'll like it ,,,
+                </div>
+                
+                <h5>only</h5>
+                
+                <h5>Rs.2900</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center hover">
+                <div class="card-img">
+                    <img src="Card Img/birthday/3c25f5ca48f5a34e78d098070d88730b.jpg" alt="" width="100%" height="200px" class="img-fluid" >
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    RED VALVET CAKE
+                </div>
+                <div class="card-text">
+                    A square white textured birthday cake with vertical ridges, topped with raspberries and tall silver candles, featuring a rose-gold "Happy Birthday" topper.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.2500</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 hover ">
+                <div class="card-img">
+                    <img src="Card Img/birthday/6a686bb4cf87a890db2ee7dea134af86.jpg" width="100%" height="200px" alt="" class="img-fluid" w-100 >
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                   VANILLA CAKE
+                </div>
+                <div class="card-text">
+                    A tall, smooth white cylindrical cake with white chocolate drip and a cascade of red roses and mixed berries, topped with a small gold "Happy Birthday" sign.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.4600</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+        <div class="container text-center">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/birthday/b1 (4).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    DAK CHOCOLATE CAKE
+                </div>
+                <div class="card-text">
+                   A rich, dark brown chocolate drip cake topped with a cupcake, cookies, chocolates, and a gold "Happy Birthday" sign.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.6750</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                 </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/birthday/b1 (5).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                   ICE CAKES
+                </div>
+                <div class="card-text">
+                    A white cylindrical birthday cake with gold foil flakes, white roses, gold spheres, and a rose-gold crown topper, displayed on a gold stand.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.5500</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/birthday/b1 (6).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    GOLDEN PIE CAKE
+                </div>
+                <div class="card-text">
+                    A tall, gold-frosted birthday cake decorated with a jeweled crown, gold spheres, butterflies, and fan decorations, with the number "31" on the base.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.8900</h5>
+                <br>
+               <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                 </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/birthday/b1 (7).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                   MARIEE CAKE
+                </div>
+                <div class="card-text">
+                    A round white birthday cake with gold accents, gold spheres, a jeweled crown, and a butterfly cutout, featuring a black and gold "Happy Birthday" topper.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.7700</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/birthday/b1 (8).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    STRAWBEERY CAKE
+                </div>
+                <div class="card-text">
+                    A cylindrical cream-colored cake with gold leaf accents, topped with a mound of fresh raspberries and wavy gold candles, with a black "Happy Birthday" topper.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.5500</h5>
+                <br>
+                 <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/birthday/b1 (9).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    PEARL CAKE
+                </div>
+                <div class="card-text">
+                    A white cylindrical birthday cake topped with fresh raspberries and a gold "30 Happy Birthday" topper on a wooden cake stand. we hope you'll definetly like it!
+                </div>
+                <h5>only</h5>
+                <h5>Rs.6600</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+     <hr>
+    <div class="container-fluid text-center" id="wedding">
+        <div class="row">
+            <div class="col-12" href="order.html">
+                <h1>WEDDING CAKES</h1>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container text-center">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center hover">
+                <div class="card-img">
+                    <img src="Card Img/wedding/wed2 (1).jpg" alt="" width="100%" height="200px" class="img-fluid">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    PINK NUTELLA CAKE
+                </div>
+                <div class="card-text">
+                    A four-tiered wedding cake in blush pink and navy blue, decorated with intricate pink, light blue, and navy sugar cherry blossoms and floral branches.Especially for wedding!!
+                </div>
+                <h5>only</h5>
+                <h5>Rs.3600</h5>
+                <br>
+                 <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center hover">
+                <div class="card-img">
+                    <img src="Card Img/wedding/wed2 (2).jpg" alt="" width="100%" height="200px" class="img-fluid" >
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    DARK VANILLA CAKE
+                </div>
+                <div class="card-text">
+                    A distinctive three-tiered wedding cake split down the middle, half traditional white with quilting and a draped fondant dress, and the other half dark chocolate with ganache drip and chocolate.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.5000</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 hover ">
+                <div class="card-img">
+                    <img src="Card Img/wedding/wed2 (3).jpg" width="100%" height="200px" alt="" class="img-fluid" w-100 >
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    BERRY CAKE
+                </div>
+                <div class="card-text">
+                    A unique, cut-open wedding cake shaped as the couple's attire, with one half being a white draped wedding dress and the other a black tuxedo, revealing pink and white interior layers.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.4500</h5>
+                <br>
+               <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                 </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+        <div class="container text-center">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/wedding/wed2 (4).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    ROSE CAKE
+                </div>
+                <div class="card-text">
+                    A four-tiered wedding cake in white and pink ombre, featuring a ruffled bottom tier and vertical drip/piping accents on the upper tiers, decorated with large pink and burgundy sugar roses.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.6500</h5>
+                <br>
+               <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                 </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/wedding/wed2 (5).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    SUITED CAKE
+                </div>
+                <div class="card-text">
+                    A three-tiered white wedding cake with a quilted pattern and small black pearl details, accented with black ribbon bands and bright pink sugar roses, topped with a bride and groom.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.6700</h5>
+                <br>
+               <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/wedding/wed2 (6).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    CHOCOCHIP CAKE
+                </div>
+                <div class="card-text">
+                    A four-tiered wedding cake featuring alternating tiers of white with ornate piping and chocolate brown with texture, decorated with pink and white sugar roses and topped with a bride and groom.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.5600</h5>
+                <br>
+                 <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/wedding/wed2 (7).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    PINK VALVET CAKE
+                </div>
+                <div class="card-text">
+                    A dramatic five-tiered wedding cake with a striking ombre effect, blending pink to deep black/burgundy, covered in a cascading arrangement of large sugar flowers and foliage.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.6500</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/wedding/wed2 (8).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                   BLUE RIBBON CAKE
+                </div>
+                <div class="card-text">
+                    A traditional three-tiered white wedding cake featuring quilted, scroll, and puzzle piece patterns, adorned with navy blue ribbons, bows, and white sugar roses.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.7500</h5>
+                <br>
+               <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/wedding/wed2 (9).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    TIE CAKE
+                </div>
+                <div class="card-text">
+                    A modern two-tiered white wedding cake designed to resemble a tuxedo on the top tier and a draped wedding dress with a bow on the bottom tier.A perfect peice of love!
+                </div>
+                <h5>only</h5>
+                <h5>Rs.3500</h5>
+                <br>
+               <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <div class="container text-center">
+             <hr>
+    <div class="container-fluid text-center" id="anniversary">
+        <div class="row">
+            <div class="col-12">
+                <h1>ANNIVERSARY CAKE</h1>
+            </div>
+        </div>
+    </div>
+    <hr>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center hover">
+                <div class="card-img">
+                    <img src="Card Img/anniversary/aniv3 (1).jpg" alt="" width="100%" height="200px" class="img-fluid">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    SIMPLE CAKE
+                </div>
+                <div class="card-text">
+                    A round anniversary cake with a red base and white top, featuring gold sprinkles, two interlocking gold hearts, and a silhouette couple umbrella topper with a "Happy Anniversary" sign.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.4100</h5>
+                <br>
+               <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center hover">
+                <div class="card-img">
+                    <img src="Card Img/anniversary/aniv3 (2).jpg" alt="" width="100%" height="200px" class="img-fluid" >
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    ROSE CAKE
+                </div>
+                <div class="card-text">
+                    A white, draped-fondant anniversary cake with red roses and baby's breath cascading down the side, featuring gold foil accents and a ring-themed topper.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.4000</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 hover">
+                <div class="card-img">
+                    <img src="Card Img/anniversary/aniv3 (3).jpg" width="100%" height="200px" alt="" class="img-fluid" w-100 >
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    CREAMY VANILLA CAKE
+                </div>
+                <div class="card-text">
+                    A white cylindrical anniversary cake with white chocolate drip, gold sprinkles, a red rose accent, and a glittery heart-shaped "Happy Anniversary" topper.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.3000</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+        <div class="container text-center">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/anniversary/aniv3 (4).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    STUFFED VANILLA CAKE
+                </div>
+                <div class="card-text">
+                    A four-tiered wedding cake with a pink-to-white ombre gradient on the bottom tier, vertical piping, pearl accents, and large dark pink and blush sugar roses.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.8000</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/anniversary/aniv3 (5).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    PICTURE CAKE
+                </div>
+                <div class="card-text">
+                    A white anniversary cake decorated with white roses, featuring a garland of four small photo prints strung across the top, and a "Happy Anniversary" cutout.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.6600</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/anniversary/aniv3 (6).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    CANDLE CAKE
+                </div>
+                <div class="card-text">
+                    A four-tiered wedding cake alternating between white tiers with decorative piping and chocolate brown tiers with texture, decorated with pink and white sugar roses and topped.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.7000</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+               </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/anniversary/aniv3 (7).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    BUTTERFLY CAKE
+                </div>
+                <div class="card-text">
+                    A striking five-tiered wedding cake with a dark ombre from pink to black/burgundy, covered in an elaborate cascade of large, dark sugar flowers and foliage.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.9000</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/anniversary/aniv3 (8).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    SUNFLOWER CAKE
+                </div>
+                <div class="card-text">
+                    A white and yellow ombre anniversary cake with a wavy texture, topped with yellow and white flowers and pearl accents, and a heart-topped "Happy Anniversary" sign.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.6000</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/anniversary/aniv3 (9).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    HEART CAKE
+                </div>
+                <div class="card-text">
+                    A two-tiered anniversary cake with a red bottom and white top, decorated with gold heart cutouts and gold sprinkles, topped with a "Happy Anniversary" sign.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.1900</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+     <hr>
+    <div class="container-fluid text-center" id="engagement">
+        <div class="row">
+            <div class="col-12">
+                <h1>ENGAGEMENT CAKES</h1>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container text-center">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center hover">
+                <div class="card-img">
+                    <img src="Card Img/engagement/engage4 (8).jpg" alt="" width="100%" height="200px" class="img-fluid">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    RING CAKE
+                </div>
+                <div class="card-text">
+                    A small round cake with a white top fading to a bright yellow ombre at the bottom, decorated with yellow and white flowers and a heart-topped "Happy Anniversary" sign.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.3500</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center hover">
+                <div class="card-img">
+                    <img src="Card Img/engagement/engage4 (9).jpg" alt="" width="100%" height="200px" class="img-fluid" >
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                   BLUE ALMOND CAKE
+                </div>
+                <div class="card-text">
+                    A two-tiered cake with a red bottom and white top featuring a rough gold edge, decorated with three layered gold hearts and a black "Happy Anniversary" topper.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.4000</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 hover ">
+                <div class="card-img">
+                    <img src="Card Img/engagement/engage4 (1).jpg" width="100%" height="200px" alt="" class="img-fluid" w-100 >
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    BOX CAKE
+                </div>
+                <div class="card-text">
+                    A round cake with a red bottom and white top, decorated with gold interlocking hearts and an umbrella-holding couple topper with "Happy Anniversary" script.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.2000</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+        <div class="container text-center">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/engagement/engage4 (2).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    BAAT PAKKI CAKE
+                </div>
+                <div class="card-text">
+                    A white cylindrical cake with draped fondant texture and gold foil accents, featuring a cascade of red roses and baby's breath, topped with a ring-themed "Happy Anniversary" sign.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.2500</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/engagement/engage4 (3).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    PINK VANILLA CAKE
+                </div>
+                <div class="card-text">
+                    A contemporary cake shaped as a life-sized half-tuxedo and half-wedding dress, with a piece cut out revealing pink and white interior layers.For perfect engagements.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.3800</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/engagement/engage4 (4).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    GOLDEN BITE CAKE
+                </div>
+                <div class="card-text">
+                    A four-tiered wedding cake in white and pink ombre, featuring ruffled and striped textures with pink drips, decorated with large sugar roses and leaves.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.4000</h5>
+                <br>
+                <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/engagement/engage4 (5).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                    PEARL WHITE CAKE
+                </div>
+                <div class="card-text">
+                    A two-tiered white cake featuring a photo of a couple, a ruffled pink fondant skirt, and a gold "Just Engaged" diamond ring topper, sitting on a rustic wooden stand.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.5000</h5>
+                <br>
+               <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/engagement/engage4 (6).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                   PURPLE CAKE
+                </div>
+                <div class="card-text">
+                    A white cylindrical cake with a ribbed texture, decorated with red and white roses, gold accents, and two gold candles, featuring a large gold "Happy Anniversary" sign.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.4000</h5>
+                <br>
+               <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                 </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center m-auto hover">
+                <div class="card-img">
+                    <img src="Card Img/engagement/engage4 (7).jpg" alt="" class="img-fluid" w-100>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                <div class="card-title">
+                   TULIP CAKE
+                </div>
+                <div class="card-text">
+                    A tall, five-tiered wedding cake with a dramatic ombre effect blending pink to deep black/burgundy, covered in a cascading arrangement of large sugar flowers.
+                </div>
+                <h5>only</h5>
+                <h5>Rs.7500</h5>
+                <br>
+               <a href="order.html"><button class="btn m-auto hover" style="background-color: #8b4513; border-color: #8b4513;">ORDER NOW</button></a>
+                 </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h3 style="color: #d2691e;">The Cake</h3>
+                    <p>Baking happiness since 2010.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4 style="color: white; font-family: 'Quicksand', sans-serif;">Contact Us</h4>
+                    <p>aptech shahrah-e-faisal,karachi</p>
+                    <p>Phone: +92 (333) 115945</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4 style="color: white; font-family: 'Quicksand', sans-serif;">Follow Us</h4>
+                    <div class="icons mt-3">
+                        <a href="https://www.facebook.com/thecakebypallet"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/thecakeplates_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.3);">
+            <p>&copy; 2025 The Cake. All rights reserved.</p>
+        </div>
+    </footer>
+ 
+
+
+
+
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

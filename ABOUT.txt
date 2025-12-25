@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cake</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(250, 247, 216);
+            color: #3e2723;
+            font-family: 'Quicksand', sans-serif;
+        }
+        h3{
+             font-family: 'Pacifico', cursive;
+             color: #8b4a14;
+        }
+    .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background-color: #8b4a14; 
+        }
+        .thecake{
+        font-size: 45px;
+        font-family:'Pacifico', cursive;
+        color: beige;
+    }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+        } 
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 30px; 
+        }
+        .nav-right a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .login-btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: none;
+            background: white;
+            color: #8b4a14;
+            font-weight: 600;
+            cursor: pointer;
+        }
+         .white{
+     color: white;
+     width: 100%;
+     background-color: rgb(255, 255, 255, 0.5);
+     border-radius: 50px;
+     font-family: 'Quicksand', sans-serif;
+     margin-left: 400px;
+
+
+        }
+        .white:hover{
+            background: #ffffff;
+            color: black;
+            
+        }
+        
+        .slide-bg {
+            height: 700px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .white:hover {
+            background: white;
+            color: black;
+        }
+
+        .about-section {
+            padding: 60px 0;
+        }
+
+        .about-img {
+            width: 100%;
+            border-radius: 13px;
+        }
+
+        .cards {
+            padding: 40px 0;
+        }
+
+        .cul-card {
+            border: 1px solid rgb(231, 231, 231);
+            padding: 21px;
+            border-radius: 10px;
+            text-align: center;
+            background: cornsilk;
+            color:#8b4a14;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            font-family: 'Pacifico', cursive;;
+        }
+
+        .cul-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 24px rgb(192, 189, 189);
+        }
+
+        .btn-box {
+            padding: 11px 24px;
+            background-color:  #8b4a14;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: 0.3s ease;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-box:hover {
+            background-color: #8b4a14; 
+            transform: translateY(-2px);
+        }
+      footer {
+            background-color: #3e2723;
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .icons a:hover {
+            color: #d2691e;
+        }
+        .white{
+        color: white;
+        background-color: rgb(255, 255, 255, 0.5);
+        border-radius: 50px;
+        font-family: 'Quicksand', sans-serif;
+        margin-left: 400px;
+        }
+    </style>
+</head>
+
+<body>
+   <nav class="navbar">
+  <div class="nav-left">
+    <img src="logo.png" class="logo">
+    <strong class="thecake">The Cake</strong>
+  </div>
+  <div class="nav-right">
+    <a href="home.html"><b>Home</b></a>
+    <a href="about.html"><b>About</b></a>
+    <a href="SPECIALS.html"><b>Specials</b></a>
+    <a href="contact.html"><b>Contact</b></a>
+    <a href="login.html" class="btn white"><strong>LOGIN</strong></a>
+  </div>
+</nav>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <img src="https://stylesatlife.com/wp-content/uploads/2023/12/still-life-birthday-cake-scaled.jpg" alt="About Cake" class="about-img" width="100px" height="600px">
+                </div>
+
+                <div class="col-md-6">
+                    <h1><strong>About Us</strong></h1>
+<justify-content><p>Welcome to The Cake, your destination for delicious flavors, beautiful designs, and unforgettable sweet moments. What began as a small passion
+for baking has grown into a full cake studio dedicated to creating cakes that not only look stunning but taste exceptional.
+At The Cake, every recipe is crafted with love, creativity, and the highest-quality ingredients to ensure that each bite brings joy
+to your celebration.
+<br>
+We believe that a cake is more than just a dessert — it is the centerpiece of memories. Whether it’s a birthday, wedding, anniversary, 
+bridal shower, corporate event, or any special moment, our cakes are designed to add a touch of happiness and style to your day. 
+From elegant themed cakes to modern minimal designs and classic favorites, we offer a wide range of flavors and styles to match every personality
+and occasion.                        
+<br>
+Our team pays careful attention to every detail — the texture, the decoration, the balance of flavors, and the overall experience. 
+We are committed to maintaining freshness, quality, and consistency in every order. Each cake is baked freshly upon request, 
+ensuring you receive a product that is crafted just for you.
+<br>
+At The Cake, customer satisfaction is at the heart of everything we do. We listen to your ideas, understand your theme, and create cakes 
+that reflect your vision. Whether you want something simple or something extraordinary, we make it possible with creativity and care.
+<br>
+Thank you for choosing The Cake to be part of your celebrations. We look forward to making your moments sweeter, one slice at a time.</p></justify-content>
+
+                   <a href="contact.html"> <button class="btn-box"><strong>Learn More</strong></button></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="cards">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <div class="cul-card">
+                        <h3><strong>Fresh Ingredients</strong></h3>
+                        <p>We prepare cakes using the freshest, highest-quality ingredients.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="cul-card">
+                        <h3><strong>Custom Designs</strong></h3>
+                        <p>Share your ideas—we create the perfect customized cake for you.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="cul-card">
+                        <h3><strong>Made With Love</strong></h3>
+                        <p>Every cake is handcrafted with care and passion. Order now!</p>
+                    </div>
+                </div>
+               <button class="btn-box" href="specials.html"><strong>view More</strong></button>
+            </div>
+        </div>
+    </div>
+
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h3 style="color: #d2691e;">The Cake</h3>
+                    <p>Baking happiness since 2010.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4 style="color: #d2691e; font-family: 'Quicksand', sans-serif;">Contact Us</h4>
+                    <p>aptech shahrah-e-faisal,karachi</p>
+                    <p>Phone: +92 (333) 115945</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4 style="color: #d2691e; font-family: 'Quicksand', sans-serif;">Follow Us</h4>
+                    <div class="icons mt-3">
+                        <a href="https://www.facebook.com/thecakebypallet"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/thecakeplates_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.3);">
+            <p>&copy; 2025 The Cake. All rights reserved.</p>
+        </div>
+    </footer>
+ </body>
+<script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+
+
+</html>
